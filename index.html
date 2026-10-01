@@ -224,7 +224,7 @@
   .schedule-day-head span{font-size:0.86rem; color:var(--charcoal-soft);}
   .slot-list{margin-top:18px;}
   .slot{
-    display:grid; grid-template-columns:150px 1fr auto; gap:22px; align-items:center;
+    display:grid; grid-template-columns:110px 1fr auto; gap:22px; align-items:center;
     padding:22px 0; border-top:1px solid rgba(40,36,29,0.12);
   }
   .slot:last-child{border-bottom:1px solid rgba(40,36,29,0.12);}
@@ -244,6 +244,17 @@
   .schedule-reformer h3{color:var(--cream); font-size:1.6rem; margin:14px 0 14px;}
   .schedule-reformer p{color:#CFC9B9; font-size:0.94rem; margin-bottom:20px;}
   .schedule-reformer .check-list{margin-bottom:30px;}
+  .reformer-times{margin:2px 0 26px;}
+  .reformer-times li{
+    display:flex; justify-content:space-between; align-items:baseline; gap:6px 16px; flex-wrap:wrap;
+    padding:14px 0; border-top:1px solid rgba(251,249,244,0.16);
+  }
+  .reformer-times li:last-child{border-bottom:1px solid rgba(251,249,244,0.16);}
+  .reformer-times strong{
+    font-family:'Red Hat Display',sans-serif; font-weight:700; font-size:0.78rem;
+    letter-spacing:0.05em; text-transform:uppercase; color:var(--cream);
+  }
+  .reformer-times .times{font-family:'Red Hat Display',sans-serif; font-weight:700; font-size:1rem; color:var(--neon); text-align:right;}
   .schedule-reformer .btn{align-self:flex-start; margin-top:auto;}
   .sched-photo{aspect-ratio:4/3;}
   .schedule-reformer .sched-photo{margin:-48px -44px 30px;}
@@ -488,17 +499,17 @@
 
         <div class="slot-list">
           <div class="slot">
-            <div class="slot-time">5.30 &ndash; 6.10pm<small>40 minutes</small></div>
+            <div class="slot-time">5.30pm</div>
             <div class="slot-name">Mat Pilates<small>A slower pace, with options for every body</small></div>
             <span class="level gentle">Gentle</span>
           </div>
           <div class="slot">
-            <div class="slot-time">6.15 &ndash; 7.00pm<small>45 minutes</small></div>
+            <div class="slot-time">6.15pm</div>
             <div class="slot-name">Mat Pilates<small>Mixed ability, work at your own level</small></div>
             <span class="level mixed">Mixed</span>
           </div>
           <div class="slot">
-            <div class="slot-time">7.05 &ndash; 8.00pm<small>55 minutes</small></div>
+            <div class="slot-time">7.05pm</div>
             <div class="slot-name">Mat Pilates<small>Mixed ability, work at your own level</small></div>
             <span class="level mixed">Mixed</span>
           </div>
@@ -513,6 +524,12 @@
         <div class="eyebrow">Reformer Pilates</div>
         <h3>Six week terms, max 4 people.</h3>
         <p>Small group sessions at the Haw Street studio, following the school timetable.</p>
+        <ul class="reformer-times">
+          <li><strong>Monday</strong><span class="times">9am</span></li>
+          <li><strong>Wednesday</strong><span class="times">7am</span></li>
+          <li><strong>Friday</strong><span class="times">7.15am &middot; 9am &middot; 10.15am</span></li>
+          <li><strong>Sunday</strong><span class="times">9am</span></li>
+        </ul>
         <ul class="check-list">
           <li><span class="tick">&#10003;</span>6 week term for &pound;120</li>
           <li><span class="tick">&#10003;</span>Maximum 4 people per session</li>
